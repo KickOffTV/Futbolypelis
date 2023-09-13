@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<link rel="icon" type="image/x-icon" href="./img/favicon.jpg">
+<script src="./Java/busacdor.js"></script>
+<meta charset="utf-8">
+<!--ADAPTACION-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--FIN ADAPTACION-->
+<html lang="es">
+    <!--TITULO-->
 
+
+
+    <head>
+        <title>Dapelis</title>
+        <link rel="stylesheet" type="text/css" href="./css/color.css">
+        <link rel="stylesheet" type="text/css" href="./css/navbar2.css">
+        <link rel="stylesheet" type="text/css" href="./css/buscador.css">
+        <script src="./Java/busacdor.js"></script>
+
+
+        <meta charset="utf-8">
+        <!-- JS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/load.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+    </head>
+    <!--fIN TITULO-->
+    <!--body-->
+    <body>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Pelis/mapimage.html">Map Image</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+            <!--<form action="./php/buscador.php" method="post">
+            <input type="text" placeholder="Search" id="searchInput">
+            <button type="submit" id="saearchButton">Go</button>
+
+        </form>-->
+            <form>
+                <input type="text" id="mySearch" onkeyup="myFunction()">
+                <button type="submit" id="searchButton">Buscar</button>
+            </form>
+            <ul id="movieList"></ul>
+            <!--Audio-->
+            <audio id="background-music" autoplay loop>
+                <source src="./mp3/fondo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                
+            </audio>
+            <button onclick="playAudio()">Reproducir audio</button>
+            <!--<input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume()"> -->
+
+            <!--fin audio-->
+        </ul>
+
+        <header>
+            <h1>Dapelis</h1>
+        </header>
+
+        <!--Cartelera-->
+
+        <div id="main-container">
+            <!--<div id="myMenu">-->
+            <div class="movie-card">
+                <a href="./Pelis/evangelion.html">
+                    <img src="./img/evangelion1.0.jpg" alt="Evangelion 1.0"
+                        style="max-width:100%;height:auto;">
+                    <h2>Evangelion 1.0</h2>
+                    <p>Película</p>
+                </div>
+
+                <div class="movie-card">
+                    <a href="./Pelis/evangelion2.22.html">
+                        <img src="./img/evangelion2.22.jpg" alt="Evangelion
+                            2.22"
+                            style="max-width:100%;height:auto;">
+                        <h2>Evangelion 2.22</h2>
+                        <p>Película</p>
+                    </div>
+
+                    <div class="movie-card">
+                        <a href="./Pelis/evangelion3.0.html">
+                            <img src="./img/evangelion3.jpg" alt="Evangelion
+                                3.0"
+                                style="max-width:100%;height:auto;">
+                            <h2>Evangelion 3.0</h2>
+                            <p>Película</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin cartelera-->
+
+
+
+                <nav style="display: flex; justify-content: center;
+                    background-color: #333; color: #fff; padding: 10px;">
+                    <a
+                        href="./Términos_y_Condiciones/Términos_y_Condiciones.html"
+                        style="color:
+                        #fff;
+                        text-decoration: none;
+                        margin: 0 10px;">Términos y Condiciones</a>
+                    <a
+                        href="./Política_de_Privacidad/Política_de_Privacidad.html""
+                        style="color:
+                        #fff;
+                        text-decoration: none;
+                        margin: 0 10px;">Política de Privacidad</a>
+                    <a href="./index.html" style="color: #fff;
+                        text-decoration: none;
+                        margin: 0 10px;">Home</a>
+                </nav>
+                <!--Cº-->
+                <footer>
+                    Copyright © 2023 Gohsty Shop INC.
+                </footer>
+                <script src="./Java/busacdor.js"></script>
+            </body>
+        </html>
